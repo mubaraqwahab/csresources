@@ -1,15 +1,15 @@
 
 
-.vh-75 {
-  height: 75vh;
+header {
+  background-image: url(https://images.pexels.com/photos/1194713/pexels-photo-1194713.jpeg?cs=srgb&dl=black-blue-computer-keyboard-1194713.jpg&fm=jpg);
 }
 
-.h-10 {
-  height: 10%;
+.jumbotron {
+  margin-bottom: 0;
 }
 
-.h-90 {
-  height: 90%;
+.vh-85 {
+  height: 85vh;
 }
 
 footer {
