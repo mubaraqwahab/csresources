@@ -11,82 +11,87 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/8d40ea811a.js" crossorigin="anonymous"></script>
+
     <title>Home | Computer Science Resources</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent border">
-        <div class="container border">
-          <a class="navbar-brand h1 mb-0" href="#">CSR</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationLinks" aria-controls="navigationLinks" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+      <div class="container">
+        <a class="navbar-brand h1 mb-0" href="#">CSR</a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigationLinks" aria-controls="navigationLinks" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="fas fa-bars"></i>
+        </button>
 
-          <div class="collapse navbar-collapse border" id="navigationLinks">
-            <div class="navbar-nav ml-auto text-center">
-              <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="#">Courses</a>
-              <a class="nav-item nav-link" href="#">Algorithms</a>
-              <a class="nav-item nav-link" href="#">Software</a>
-              <a class="nav-item nav-link" href="#">UI resources</a>
-              <a class="nav-item nav-link" href="#">Contact us</a>
-            </div>
-            <!-- <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
+        <div class="collapse navbar-collapse" id="navigationLinks">
+          <div class="navbar-nav ml-auto text-center">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="/courses.html">Courses</a>
+            <a class="nav-item nav-link" href="/algorithms.html">Algorithms</a>
+            <a class="nav-item nav-link" href="/software.html">Software</a>
+            <a class="nav-item nav-link" href="/ui-resources.html">UI resources</a>
+            <a class="nav-item nav-link" href="/contact-us.html">Contact us</a>
           </div>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
         </div>
-      </nav>
+      </div>
+    </nav>
 
+    <header>
       <div class="jumbotron jumbotron-fluid bg-transparent d-flex align-items-center text-light text-center vh-85">
         <div class="container">
           <h1 class="display-4"><strong>Computer Science Resources</strong></h1>
-          <p class="lead mx-auto w-75">Are you looking for resources for your next computer science project? <em>We've got you covered!</em> We can link you to courses, software, UI resources and more.</p>
+          <p class="lead mx-auto mb-lg-5 w-75">Are you looking for resources for your next computer science project? <em>We've got you covered!</em> We can link you to courses, software, UI resources and more.</p>
         </div>
       </div>
     </header>
 
-    <main>
+
+    <main class="bg-light">
       <div class="container py-5">
         <div class="row py-md-3 py-lg-5">
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
-            <div class="card h-100">
+            <div class="card h-100 shadow">
               <div class="card-body">
                 <h5 class="card-title">Courses</h5>
                 <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="#" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/courses.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
-            <div class="card h-100">
+            <div class="card h-100 shadow">
               <div class="card-body">
-                <h5 class="card-title">Courses</h5>
+                <h5 class="card-title">Algorithms</h5>
                 <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="#" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/algorithms.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
-            <div class="card h-100">
+            <div class="card h-100 shadow">
               <div class="card-body">
-                <h5 class="card-title">Courses</h5>
+                <h5 class="card-title">Software</h5>
                 <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="#" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/software.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
-            <div class="card h-100">
+            <div class="card h-100 shadow">
               <div class="card-body">
-                <h5 class="card-title">Courses</h5>
+                <h5 class="card-title">UI resources</h5>
                 <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="#" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/ui-resources.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
@@ -94,13 +99,13 @@
       </div>
     </main>
 
-    <footer class="border">
+    <footer class="border text-dark bg-light">
       <div class="container d-flex flex-column flex-md-row text-center justify-content-md-between py-3">
         <div>
           <span class="d-block d-md-inline">CSR</span>
           <span>&copy; Computer Science Reosurces 2019</span>
         </div>
-        <div>Have some resource you would like to share? <a href="contact-us.html">Contact us</a>!</div>
+        <div>Have some resource you would like to share? <a href="/contact-us.html">Contact us</a>!</div>
       </div>
     </footer>
 

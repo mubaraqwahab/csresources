@@ -1,11 +1,28 @@
+:root {
+  --light-sea-green: #23748C;
+  --steel-blue: #4082AA;
+  --rosy-brown: #986382;
+  --dark-slate-gray: #2A2A36;
+  --dark-slate-blue: #505980;
+}
 
 
-header {
-  background-image: url(https://images.pexels.com/photos/1194713/pexels-photo-1194713.jpeg?cs=srgb&dl=black-blue-computer-keyboard-1194713.jpg&fm=jpg);
+body {
+  /* Photo by mohammad alizade on Unsplash */
+  background-image: url(../images/blurry-rainy-day.jpg);
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .jumbotron {
   margin-bottom: 0;
+}
+
+.vh-50 {
+  height: 50vh;
 }
 
 .vh-85 {
