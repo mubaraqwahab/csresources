@@ -6,8 +6,21 @@
   --dark-slate-blue: #505980;
 }
 
+/* Smooth scrolling, if preferred */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
 
 body {
+  /* Fallback */
+  background-color: var(--dark-slate-blue);
   /* Photo by mohammad alizade on Unsplash */
   background-image: url(../images/blurry-rainy-day.jpg);
 
@@ -17,9 +30,34 @@ body {
   background-size: cover;
 }
 
+.navbar {
+  background: inherit;
+  transition: 750ms ease;
+}
+
+/* Change navbar colour on scroll */
+
+.navbar.scrolled {
+  background: var(--dark-slate-blue) !important;
+}
+
+/* Increase navbar text size on small and medium screens */
+
+@media (max-width: 991.98px) {
+  .navbar {
+    font-size: 1.125rem;
+  }
+}
+
+.navbar-toggler i {
+  transition: 750ms ease;
+}
+
 .jumbotron {
   margin-bottom: 0;
 }
+
+/* Utilities */
 
 .vh-50 {
   height: 50vh;
@@ -29,11 +67,7 @@ body {
   height: 85vh;
 }
 
-footer {
-  font-size: 80%;
-}
 
-/*
-.landing-jumbo {
-  height: 75vh;
-} */
+.header-angle-down {
+  bottom: 0px;
+}

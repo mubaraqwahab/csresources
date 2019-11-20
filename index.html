@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -17,12 +20,12 @@
     <title>Home | Computer Science Resources</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container">
         <a class="navbar-brand h1 mb-0" href="#">CSR</a>
         <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigationLinks" aria-controls="navigationLinks" aria-expanded="false" aria-label="Toggle navigation">
           <!-- <span class="navbar-toggler-icon"></span> -->
-          <i class="fas fa-bars"></i>
+          <i class="text-light fas fa-bars fa-lg"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navigationLinks">
@@ -42,17 +45,21 @@
       </div>
     </nav>
 
-    <header>
-      <div class="jumbotron jumbotron-fluid bg-transparent d-flex align-items-center text-light text-center vh-85">
+    <header class="position-relative text-light d-flex justify-content-center">
+      <div class="jumbotron jumbotron-fluid bg-transparent d-flex align-items-center vh-85 text-center">
         <div class="container">
           <h1 class="display-4"><strong>Computer Science Resources</strong></h1>
-          <p class="lead mx-auto mb-lg-5 w-75">Are you looking for resources for your next computer science project? <em>We've got you covered!</em> We can link you to courses, software, UI resources and more.</p>
+          <p class="lead mx-auto mb-5 w-75">Are you looking for resources for your next computer science project? <em>We've got you covered!</em> We can link you to courses, software, UI resources and more.</p>
         </div>
+      </div>
+      <div class="position-absolute header-angle-down p-2">
+        <a href="#main" class="text-light ">
+          <i class="fas fa-angle-down fa-3x animated infinite bounce"></i>
+        </a>
       </div>
     </header>
 
-
-    <main class="bg-light">
+    <main class="bg-light" id="main">
       <div class="container py-5">
         <div class="row py-md-3 py-lg-5">
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
@@ -99,13 +106,14 @@
       </div>
     </main>
 
-    <footer class="border text-dark bg-light">
+    <footer class="border text-dark bg-light small">
       <div class="container d-flex flex-column flex-md-row text-center justify-content-md-between py-3">
         <div>
           <span class="d-block d-md-inline">CSR</span>
-          <span>&copy; Computer Science Reosurces 2019</span>
+          <span>&copy; Computer Science Resources 2019</span> •
+          <span><a href="#">Credits</a></span>
         </div>
-        <div>Have some resource you would like to share? <a href="/contact-us.html">Contact us</a>!</div>
+        <div>Have some resource you would like to share? <a href="/contact-us.html">Contact us!</a></div>
       </div>
     </footer>
 
@@ -114,5 +122,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
   </body>
 </html>
