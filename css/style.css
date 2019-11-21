@@ -1,9 +1,98 @@
 :root {
-  --light-sea-green: #23748C;
+  /* --light-sea-green: #23748C; */
   --steel-blue: #4082AA;
   --rosy-brown: #986382;
-  --dark-slate-gray: #2A2A36;
+  /* --dark-slate-gray: #2A2A36; */
   --dark-slate-blue: #505980;
+}
+
+/* BOOTSTRAP OVERRIDES */
+
+a {
+  color: var(--steel-blue);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: var(--dark-slate-blue);
+  text-decoration: underline;
+}
+
+h1, .h1 {
+  font-size: 2rem;
+}
+
+h2, .h2 {
+  font-size: 1.75rem;
+}
+
+h3, .h3 {
+  font-size: 1.5rem;
+}
+
+h4, .h4 {
+  font-size: 1.25rem;
+}
+
+h5, .h5 {
+  font-size: 1rem;
+}
+
+h6, .h6 {
+  font-size: 0.75rem;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+.card-title {
+  color: var(--dark-slate-blue);
+}
+
+.btn-outline-primary {
+  color: var(--dark-slate-blue);
+  border-color: var(--dark-slate-blue);
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: var(--dark-slate-blue);
+  border-color: var(--dark-slate-blue);
+}
+
+.btn-outline-primary:focus, .btn-outline-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(80, 89, 128, 0.5);
+}
+
+.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+  color: var(--dark-slate-blue);
+  background-color: transparent;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: var(--dark-slate-blue);
+  border-color: var(--dark-slate-blue);
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(80, 89, 128, 0.5);
+}
+
+.shadow {
+  box-shadow: 0 0.25rem 0.5rem rgba(152, 99, 130, 0.15) !important;
+}
+
+.border {
+  border: 1px solid rgba(64, 130, 170, 0.15) !important;
+}
+
+.border-top {
+  border-top: 1px solid rgba(64, 130, 170, 0.15) !important;
 }
 
 /* Smooth scrolling, if preferred */
@@ -41,9 +130,9 @@ body {
   background: var(--dark-slate-blue) !important;
 }
 
-/* Increase navbar text size on small and medium screens */
+/* Increase navbar text size on small screens */
 
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   .navbar {
     font-size: 1.125rem;
   }
@@ -51,10 +140,6 @@ body {
 
 .navbar-toggler i {
   transition: 750ms ease;
-}
-
-.jumbotron {
-  margin-bottom: 0;
 }
 
 /* Utilities */
@@ -66,7 +151,6 @@ body {
 .vh-85 {
   height: 85vh;
 }
-
 
 .header-angle-down {
   bottom: 0px;
