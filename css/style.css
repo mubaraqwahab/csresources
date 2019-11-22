@@ -15,7 +15,7 @@ a {
 }
 
 a:hover {
-  color: var(--dark-slate-blue);
+  color: var(--rosy-brown);
   text-decoration: underline;
 }
 
@@ -47,8 +47,8 @@ h6, .h6 {
   margin-bottom: 0;
 }
 
-.card-title {
-  color: var(--dark-slate-blue);
+.card-title, .text-primary {
+  color: var(--dark-slate-blue) !important;
 }
 
 .btn-outline-primary {
@@ -88,11 +88,11 @@ h6, .h6 {
 }
 
 .border {
-  border: 1px solid rgba(64, 130, 170, 0.15) !important;
+  border: 1px solid rgba(152, 99, 130, 0.2) !important;
 }
 
 .border-top {
-  border-top: 1px solid rgba(64, 130, 170, 0.15) !important;
+  border-top: 1px solid rgba(152, 99, 130, 0.2) !important;
 }
 
 /* Smooth scrolling, if preferred */
@@ -121,13 +121,16 @@ body {
 
 .navbar {
   background: inherit;
-  transition: 750ms ease;
+  transition: 500ms ease;
 }
 
 /* Change navbar colour on scroll */
 
 .navbar.scrolled {
   background: var(--dark-slate-blue) !important;
+  box-shadow: 0 0.25rem 0.5rem rgba(152, 99, 130, 0.15);
+  /* background: rgba(80,89,128,0.95) !important;
+  backdrop-filter: blur(4px); */
 }
 
 /* Increase navbar text size on small screens */
@@ -144,14 +147,33 @@ body {
 
 /* Utilities */
 
-.vh-50 {
-  height: 50vh;
+.min-vh-50 {
+  min-height: 50vh;
 }
 
-.vh-85 {
-  height: 85vh;
+.min-vh-85 {
+  min-height: 85vh;
 }
 
 .header-angle-down {
   bottom: 0px;
+}
+
+.py-6 {
+  padding-top: 3.25rem !important;
+  padding-bottom: 3.25rem !important;
+}
+
+@media (min-width: 768px) {
+  .py-md-8 {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .py-lg-10 {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+  }
 }

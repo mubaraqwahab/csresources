@@ -14,24 +14,27 @@
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/8d40ea811a.js" crossorigin="anonymous"></script>
 
-    <title>Courses | Computer Science Resources</title>
+    <title>Algorithms &middot; Computer Science Resources</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark sticky-top">
       <div class="container">
-        <a class="navbar-brand font-weight-bold mb-0" href="#">CSR</a>
-        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigationLinks" aria-controls="navigationLinks" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="text-light fas fa-bars fa-lg"></i>
+        <a class="navbar-brand font-weight-bold order-0 order-md-0" href="#">CSR</a>
+        <button class="btn order-1 order-md-1" data-toggle="collapse" aria-label="Toggle search bar">
+          <i class="text-light fas fa-search"></i>
+        </button>
+        <button class="navbar-toggler border-0 order-2 order-md-0" type="button" data-toggle="collapse" data-target="#navigationLinks" aria-controls="navigationLinks" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="text-light fas fa-bars"></i>
         </button>
 
-        <div class="collapse navbar-collapse" id="navigationLinks">
+        <div class="collapse navbar-collapse order-3 order-md-0" id="navigationLinks">
           <div class="navbar-nav ml-auto text-center">
-            <a class="nav-item nav-link" href="/index.html">Home</a>
-            <a class="nav-item nav-link active" href="#">Courses <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="/algorithms.html">Algorithms</a>
-            <a class="nav-item nav-link" href="/software.html">Software</a>
-            <a class="nav-item nav-link" href="/ui-resources.html">UI resources</a>
-            <a class="nav-item nav-link" href="/contact-us.html">Contact us</a>
+            <a class="nav-item nav-link" href="index.html">Home</a>
+            <a class="nav-item nav-link" href="courses.html">Courses & tutorials</a>
+            <a class="nav-item nav-link active" href="#">Algorithms <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="software.html">Software</a>
+            <a class="nav-item nav-link" href="ui-resources.html">UI resources</a>
+            <!-- <a class="nav-item nav-link" href="contact-us.html">Contact us</a> -->
           </div>
           <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -42,175 +45,175 @@
     </nav>
 
     <header>
-      <div class="jumbotron jumbotron-fluid bg-transparent d-flex align-items-center text-light vh-50">
+      <div class="jumbotron jumbotron-fluid bg-transparent d-flex align-items-center text-light min-vh-50">
         <div class="container">
-          <h1 class="display-4"><strong>Courses</strong></h1>
-          <p class="lead mb-5 w-75">Are you looking for resources for your next computer science project? We can link you to courses, software, UI resources and more.</p>
+          <h1 class="display-4"><strong>Algorithms</strong></h1>
+          <p class="lead mb-5 w-75">Check out how to implement various data structure algorithms, operating systems concepts &hellip;</p>
         </div>
       </div>
     </header>
 
 
     <main class="bg-white">
-      <div class="container py-5">
-        <div class="row py-md-3 py-lg-5">
+      <div class="container py-5 py-md-8 py-lg-10">
+        <div class="row">
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h4 class="card-title">Courses</h4>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="/courses.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/courses.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h4 class="card-title">Algorithms</h4>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="/algorithms.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/algorithms.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h4 class="card-title">Software</h4>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="/software.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/software.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h4 class="card-title">UI resources</h4>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="/ui-resources.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/ui-resources.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h4 class="card-title">Courses</h4>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="/courses.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/courses.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h4 class="card-title">Algorithms</h4>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="/algorithms.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/algorithms.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h4 class="card-title">Software</h4>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="/software.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/software.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h4 class="card-title">UI resources</h4>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="/ui-resources.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/ui-resources.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h4 class="card-title">Courses</h4>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="/courses.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/courses.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h4 class="card-title">Algorithms</h4>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="/algorithms.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/algorithms.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h4 class="card-title">Software</h4>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="/software.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/software.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h4 class="card-title">UI resources</h4>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="/ui-resources.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/ui-resources.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h4 class="card-title">Courses</h4>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="/courses.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/courses.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h4 class="card-title">Algorithms</h4>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="/algorithms.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/algorithms.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h4 class="card-title">Software</h4>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="/software.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/software.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
-              <div class="card-body">
+              <div class="card-body d-flex flex-column">
                 <h4 class="card-title">UI resources</h4>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
                 <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="/ui-resources.html" class="btn btn-outline-primary float-right">Go <i class="fas fa-angle-right"></i></a>
+                <a href="/ui-resources.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
@@ -218,12 +221,13 @@
       </div>
     </main>
 
-    <footer class="border-top text-dark bg-light small">
-      <div class="container d-flex flex-column flex-md-row text-center justify-content-md-between py-4">
+    <footer class="text-dark bg-white small">
+      <div class="container d-flex flex-column flex-lg-row text-center justify-content-lg-between py-4 border-top">
         <div>
-          <span class="d-block d-md-inline">CSR</span>
-          <span>&copy; Computer Science Resources 2019</span> •
-          <span><a href="#">Credits</a></span>
+          <span class="d-block d-lg-inline">CSR</span>
+          <span>&copy; Computer Science Resources 2019</span> &middot;
+          <span><a href="#">Credits</a></span> &middot;
+          <span><a href="#">Disclaimer</a></span>
         </div>
         <div>Have some resource you would like to share? <a href="/contact-us.html">Contact us!</a></div>
       </div>
