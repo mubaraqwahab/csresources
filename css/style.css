@@ -120,7 +120,7 @@ body {
 }
 
 .navbar {
-  background: inherit;
+  /* background: inherit; */
   transition: 500ms ease;
 }
 
