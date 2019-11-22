@@ -1,21 +1,27 @@
 :root {
-  /* --light-sea-green: #23748C; */
-  --steel-blue: #4082AA;
+  /* --light-sea-green: #23748C;
+  --deep-blue: rgba(9,9,121,1);
   --rosy-brown: #986382;
-  /* --dark-slate-gray: #2A2A36; */
-  --dark-slate-blue: #505980;
+  --dark-slate-gray: #2A2A36;
+  --dark-slate-blue: #505980; */
+
+  --midnight-blue: rgb(27, 31, 124);
+  --midnight-purple: rgb(60, 36, 124);
+  --dark-slate-blue: rgb(116, 78, 119);
+  --thistle: rgb(215, 203, 214);
+  --dim-gray: rgb(78, 60, 78);
 }
 
 /* BOOTSTRAP OVERRIDES */
 
 a {
-  color: var(--steel-blue);
+  color: var(--midnight-blue);
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: var(--rosy-brown);
+  color: var(--dark-slate-blue);
   text-decoration: underline;
 }
 
@@ -48,51 +54,51 @@ h6, .h6 {
 }
 
 .card-title, .text-primary {
-  color: var(--dark-slate-blue) !important;
+  color: var(--midnight-purple) !important;
 }
 
 .btn-outline-primary {
-  color: var(--dark-slate-blue);
-  border-color: var(--dark-slate-blue);
+  color: var(--midnight-purple);
+  border-color: var(--midnight-purple);
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: var(--dark-slate-blue);
-  border-color: var(--dark-slate-blue);
+  background-color: var(--midnight-purple);
+  border-color: var(--midnight-purple);
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(80, 89, 128, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(60, 36, 124, 0.5);
 }
 
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-  color: var(--dark-slate-blue);
+  color: var(--midnight-purple);
   background-color: transparent;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
-  background-color: var(--dark-slate-blue);
-  border-color: var(--dark-slate-blue);
+  background-color: var(--midnight-purple);
+  border-color: var(--midnight-purple);
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(80, 89, 128, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(60, 36, 124, 0.5);
 }
 
 .shadow {
-  box-shadow: 0 0.25rem 0.5rem rgba(152, 99, 130, 0.15) !important;
+  box-shadow: 0 0.25rem 0.5rem rgba(78, 60, 78, 0.2) !important;
 }
 
 .border {
-  border: 1px solid rgba(152, 99, 130, 0.2) !important;
+  border: 1px solid rgba(78, 60, 78, 0.2) !important;
 }
 
 .border-top {
-  border-top: 1px solid rgba(152, 99, 130, 0.2) !important;
+  border-top: 1px solid rgba(78, 60, 78, 0.2) !important;
 }
 
 /* Smooth scrolling, if preferred */
@@ -109,28 +115,30 @@ html {
 
 body {
   /* Fallback */
-  background-color: var(--dark-slate-blue);
-  /* Photo by mohammad alizade on Unsplash */
-  background-image: url(../images/blurry-rainy-day.jpg);
+  background-color: var(--midnight-purple);
+  background-image: linear-gradient(150deg, var(--midnight-blue) 0%, var(--midnight-purple) 15%, var(--dark-slate-blue) 40%, var(--thistle) 75%, var(--dim-gray) 100%);
 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* Photo by mohammad alizade on Unsplash */
+  /* background-image: url(../images/blurry-rainy-day.jpg); */
+
+  /* background-attachment: fixed; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
 }
 
 .navbar {
-  /* background: inherit; */
+  background: rgba(60, 36, 124, 0);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   transition: 500ms ease;
 }
 
 /* Change navbar colour on scroll */
 
 .navbar.scrolled {
-  background: var(--dark-slate-blue) !important;
-  box-shadow: 0 0.25rem 0.5rem rgba(152, 99, 130, 0.15);
-  /* background: rgba(80,89,128,0.95) !important;
-  backdrop-filter: blur(4px); */
+  background: var(--midnight-purple) !important;
+  box-shadow: 0 0.25rem 0.5rem rgba(60, 36, 124, 0.15);
 }
 
 /* Increase navbar text size on small screens */
