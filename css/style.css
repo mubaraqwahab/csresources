@@ -1,27 +1,21 @@
 :root {
-  /* --light-sea-green: #23748C;
-  --deep-blue: rgba(9,9,121,1);
-  --rosy-brown: #986382;
+  --deep-blue: rgb(9, 9, 121);            /* Primary color, gradient heading */
+  --light-sea-green: rgb(35, 116, 140);   /* Link */
+  --rosy-brown: rgb(152, 99, 130);        /* Secondary color, gradient, shadow, border, active link */
   --dark-slate-gray: #2A2A36;
-  --dark-slate-blue: #505980; */
-
-  --midnight-blue: rgb(27, 31, 124);
-  --midnight-purple: rgb(60, 36, 124);
-  --dark-slate-blue: rgb(116, 78, 119);
-  --thistle: rgb(215, 203, 214);
-  --dim-gray: rgb(78, 60, 78);
+  --dark-slate-blue: rgb(80, 89, 128);    /* Gradient */
 }
 
 /* BOOTSTRAP OVERRIDES */
 
 a {
-  color: var(--midnight-blue);
+  color: var(--light-sea-green);
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: var(--dark-slate-blue);
+  color: var(--rosy-brown);
   text-decoration: underline;
 }
 
@@ -54,51 +48,56 @@ h6, .h6 {
 }
 
 .card-title, .text-primary {
-  color: var(--midnight-purple) !important;
+  color: var(--deep-blue) !important;
+}
+
+.btn:focus, .btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(152, 99, 130, 0.5);
 }
 
 .btn-outline-primary {
-  color: var(--midnight-purple);
-  border-color: var(--midnight-purple);
+  color: var(--deep-blue);
+  border-color: var(--deep-blue);
 }
 
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: var(--midnight-purple);
-  border-color: var(--midnight-purple);
+  background-color: var(--deep-blue);
+  border-color: var(--deep-blue);
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(60, 36, 124, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(9, 9, 121, 0.5);
 }
 
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-  color: var(--midnight-purple);
+  color: var(--deep-blue);
   background-color: transparent;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
-  background-color: var(--midnight-purple);
-  border-color: var(--midnight-purple);
+  background-color: var(--deep-blue);
+  border-color: var(--deep-blue);
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(60, 36, 124, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(9, 9, 121, 0.5);
 }
 
 .shadow {
-  box-shadow: 0 0.25rem 0.5rem rgba(78, 60, 78, 0.2) !important;
+  box-shadow: 0 0.25rem 0.5rem rgba(152, 99, 130, 0.2) !important;
 }
 
 .border {
-  border: 1px solid rgba(78, 60, 78, 0.2) !important;
+  border: 1px solid rgba(152, 99, 130, 0.2) !important;
 }
 
 .border-top {
-  border-top: 1px solid rgba(78, 60, 78, 0.2) !important;
+  border-top: 1px solid rgba(152, 99, 130, 0.2) !important;
 }
 
 /* Smooth scrolling, if preferred */
@@ -115,20 +114,20 @@ html {
 
 body {
   /* Fallback */
-  background-color: var(--midnight-purple);
-  background-image: linear-gradient(150deg, var(--midnight-blue) 0%, var(--midnight-purple) 15%, var(--dark-slate-blue) 40%, var(--thistle) 75%, var(--dim-gray) 100%);
+  background-color: var(--deep-blue);
+  background: linear-gradient(170deg, var(--deep-blue) 0%, var(--rosy-brown) 50%, var(--dark-slate-blue) 100%);
 
   /* Photo by mohammad alizade on Unsplash */
   /* background-image: url(../images/blurry-rainy-day.jpg); */
 
-  /* background-attachment: fixed; */
-  /* background-position: center; */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
+  background-attachment: fixed;
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 .navbar {
-  background: rgba(60, 36, 124, 0);
+  background: rgba(9, 9, 121, 0);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   transition: 500ms ease;
@@ -137,8 +136,8 @@ body {
 /* Change navbar colour on scroll */
 
 .navbar.scrolled {
-  background: var(--midnight-purple) !important;
-  box-shadow: 0 0.25rem 0.5rem rgba(60, 36, 124, 0.15);
+  background: var(--deep-blue) !important;
+  box-shadow: 0 0.25rem 0.5rem rgba(152, 99, 130, 0.2);
 }
 
 /* Increase navbar text size on small screens */
@@ -147,6 +146,12 @@ body {
   .navbar {
     font-size: 1.125rem;
   }
+}
+
+.navbar-brand {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-right: 0;
 }
 
 .navbar-toggler i {
