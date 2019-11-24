@@ -14,15 +14,26 @@
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/8d40ea811a.js" crossorigin="anonymous"></script>
 
-    <title>Algorithms &middot; Computer Science Resources</title>
+    <title>Algorithms &middot; Computer Student Resources</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top dropdown">
       <div class="container">
         <a class="navbar-brand font-weight-bold order-0 order-md-0" href="#">CSR</a>
-        <button class="btn order-1 order-md-1" data-toggle="collapse" aria-label="Toggle search bar">
+        <button class="btn order-1 order-md-1" type="button" data-toggle="dropdown" data-display="static" id="searchButton" aria-haspopup="true" aria-expanded="false" aria-label="Toggle search bar">
           <i class="text-light fas fa-search"></i>
         </button>
+
+        <div class="dropdown-menu dropdown-menu-md-right w-100 w-md-auto mr-md-4 mr-lg-5 py-2 px-3 border" aria-labelledby="searchButton">
+          <form class="form-inline">
+            <div class="input-group w-100">
+              <input class="form-control border" type="search" placeholder="Search" aria-label="Search" aria-describedby="searchButton">
+              <div class="input-group-append">
+                <button class="btn btn-outline-primary" type="submit"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
         <button class="navbar-toggler btn border-0 order-2 order-md-0" type="button" data-toggle="collapse" data-target="#navigationLinks" aria-controls="navigationLinks" aria-expanded="false" aria-label="Toggle navigation">
           <i class="text-light fas fa-bars"></i>
         </button>
@@ -30,16 +41,11 @@
         <div class="collapse navbar-collapse order-3 order-md-0" id="navigationLinks">
           <div class="navbar-nav ml-auto text-center">
             <a class="nav-item nav-link" href="index.html">Home</a>
-            <a class="nav-item nav-link" href="courses.html">Courses & tutorials</a>
+            <a class="nav-item nav-link" href="courses.html">Tutorials</a>
             <a class="nav-item nav-link active" href="#">Algorithms <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="software.html">Software</a>
             <a class="nav-item nav-link" href="ui-resources.html">UI resources</a>
-            <!-- <a class="nav-item nav-link" href="contact-us.html">Contact us</a> -->
           </div>
-          <!-- <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form> -->
         </div>
       </div>
     </nav>
@@ -48,7 +54,7 @@
       <div class="jumbotron jumbotron-fluid bg-transparent d-flex align-items-center text-light min-vh-50">
         <div class="container">
           <h1 class="display-4"><strong>Algorithms</strong></h1>
-          <p class="lead mb-5 w-75">Check out how to implement various data structure algorithms, operating systems concepts &hellip;</p>
+          <p class="lead mb-5 w-75">Check out how to implement various data structure algorithms and operating systems concepts.</p>
         </div>
       </div>
     </header>
@@ -60,160 +66,120 @@
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Courses</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="courses.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Stack implementation <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></p>
+                <p class="card-text">Learn how to implement a stack in C, C++, Java, Python and C#.</p>
+                <a href="https://www.geeksforgeeks.org/stack-data-structure-introduction-program/" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Algorithms</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="algorithms.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Hash table with open addressing linear probing <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></p>
+                <p class="card-text">Learn how to implement a hash table in C++ with open addressing linear probing.</p>
+                <a href="https://www.geeksforgeeks.org/implementing-hash-table-open-addressing-linear-probing-cpp/" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Software</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="software.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Page replacement <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://github.com/mubaraqwahab/" target="_blank">Mubaraq Wahab</a></p>
+                <p class="card-text">Check how to implement FIFO and LRU page replacement algorithms using Python.</p>
+                <a href="https://github.com/mubaraqwahab/page-replacement-algorithms/" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">UI resources</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="ui-resources.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Optimal page replacement <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></p>
+                <p class="card-text">Check how to implement optimal (OPT) page replacement algorithms with C++.</p>
+                <a href="https://www.geeksforgeeks.org/optimal-page-replacement-algorithm/" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Courses</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="courses.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Disk scheduling <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://github.com/mubaraqwahab/" target="_blank">Mubaraq Wahab</a></p>
+                <p class="card-text">Check how to implement FCFS and SSTF disk scheduling algorithms using Python.</p>
+                <a href="https://github.com/mubaraqwahab/disk-scheduling-algorithms/" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Algorithms</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="algorithms.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">SCAN disk scheduling <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></p>
+                <p class="card-text">Learn how to implement SCAN disk scheduling algorithm with C++.</p>
+                <a href="https://www.geeksforgeeks.org/scan-elevator-disk-scheduling-algorithms/" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Software</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="software.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">C-SCAN disk scheduling <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></p>
+                <p class="card-text">Learn how to implement C-SCAN disk scheduling algorithm with C++.</p>
+                <a href="https://www.geeksforgeeks.org/c-scan-disk-scheduling-algorithm/" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">UI resources</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="ui-resources.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Merge sort <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.youtube.com/channel/UC_lH_9ARn_7nuUb8tGCBsYA" target="_blank">Lightning Code</a></p>
+                <p class="card-text">Learn how to implement merge sort using Python.</p>
+                <a href="https://youtu.be/SWHgms9gQNM" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Courses</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="courses.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Insertion sort <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.youtube.com/channel/UC_lH_9ARn_7nuUb8tGCBsYA" target="_blank">Lightning Code</a></p>
+                <p class="card-text">Learn how to implement insertion sort using Python.</p>
+                <a href="https://youtu.be/eNLdKvjrCzo" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Algorithms</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="algorithms.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">QuickSort <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></p>
+                <p class="card-text">Learn how to implement QuickSort using C, C++, Java, Python and C#.</p>
+                <a href="https://www.geeksforgeeks.org/quick-sort/" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Software</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="software.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Binary search <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></p>
+                <p class="card-text">Learn how to implement binary search using C, C++, Java, Python, C# and PHP.</p>
+                <a href="https://www.geeksforgeeks.org/binary-search/" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">UI resources</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="ui-resources.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
-            <div class="card h-100 shadow">
-              <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Courses</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="courses.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
-            <div class="card h-100 shadow">
-              <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Algorithms</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="algorithms.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
-            <div class="card h-100 shadow">
-              <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Software</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="software.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
-            <div class="card h-100 shadow">
-              <div class="card-body d-flex flex-column">
-                <h4 class="card-title">UI resources</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="ui-resources.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Converting infix to postfix <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://github.com/mubaraqwahab/" target="_blank">Mubaraq Wahab</a></p>
+                <p class="card-text">Discover how to convert an infix expression to a postfix expression using Python.</p>
+                <a href="https://github.com/mubaraqwahab/infix-postfix" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
@@ -225,7 +191,7 @@
       <div class="container d-flex flex-column flex-lg-row text-center justify-content-lg-between py-4 border-top">
         <div>
           <span class="d-block d-lg-inline">CSR</span>
-          <span>&copy; Computer Science Resources 2019</span> &middot;
+          <span>&copy; Computer Student Resources 2019</span> &middot;
           <span><a href="#">Credits</a></span> &middot;
           <span><a href="#">Disclaimer</a></span>
         </div>

@@ -14,15 +14,26 @@
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/8d40ea811a.js" crossorigin="anonymous"></script>
 
-    <title>Software &middot; Computer Science Resources</title>
+    <title>Software &middot; Computer Student Resources</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top dropdown">
       <div class="container">
         <a class="navbar-brand font-weight-bold order-0 order-md-0" href="#">CSR</a>
-        <button class="btn order-1 order-md-1" data-toggle="collapse" aria-label="Toggle search bar">
+        <button class="btn order-1 order-md-1" type="button" data-toggle="dropdown" data-display="static" id="searchButton" aria-haspopup="true" aria-expanded="false" aria-label="Toggle search bar">
           <i class="text-light fas fa-search"></i>
         </button>
+
+        <div class="dropdown-menu dropdown-menu-md-right w-100 w-md-auto mr-md-4 mr-lg-5 py-2 px-3 border" aria-labelledby="searchButton">
+          <form class="form-inline">
+            <div class="input-group w-100">
+              <input class="form-control border" type="search" placeholder="Search" aria-label="Search" aria-describedby="searchButton">
+              <div class="input-group-append">
+                <button class="btn btn-outline-primary" type="submit"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
         <button class="navbar-toggler btn border-0 order-2 order-md-0" type="button" data-toggle="collapse" data-target="#navigationLinks" aria-controls="navigationLinks" aria-expanded="false" aria-label="Toggle navigation">
           <i class="text-light fas fa-bars"></i>
         </button>
@@ -30,16 +41,11 @@
         <div class="collapse navbar-collapse order-3 order-md-0" id="navigationLinks">
           <div class="navbar-nav ml-auto text-center">
             <a class="nav-item nav-link" href="index.html">Home</a>
-            <a class="nav-item nav-link" href="courses.html">Courses & tutorials</a>
+            <a class="nav-item nav-link" href="courses.html">Tutorials</a>
             <a class="nav-item nav-link" href="algorithms.html">Algorithms</a>
             <a class="nav-item nav-link active" href="#">Software <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="ui-resources.html">UI resources</a>
-            <!-- <a class="nav-item nav-link" href="contact-us.html">Contact us</a> -->
           </div>
-          <!-- <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form> -->
         </div>
       </div>
     </nav>
@@ -60,160 +66,130 @@
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Courses</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="courses.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Visual Studio Code <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.microsoft.com/" target="_blank">Microsoft</a></p>
+                <p class="card-text">A free, open source, extensible text editor with built-in Git, debugging and IntelliSense. Available on Windows, Mac and Linux.</p>
+                <a href="https://code.visualstudio.com/" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Algorithms</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="algorithms.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Sublime Text <span class="badge badge-paid">Free trial</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.sublimehq.com/" target="_blank">Sublime HQ</a></p>
+                <p class="card-text">A sophisticated text editor for code, markup and prose. Available on Windows, Mac and Linux.</p>
+                <a href="https://www.sublimetext.com/" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Software</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="software.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Git <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://git-scm.com/" target="_blank">Git</a></p>
+                <p class="card-text">A free and open source distributed version control system for small and large projects. Available on Windows, Mac and Linux.</p>
+                <a href="https://git-scm.com/" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">UI resources</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="ui-resources.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Make <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.gnu.org" target="_blank">GNU</a></p>
+                <p class="card-text">A tool to control the generation of executables from the a program's source files. Available on Mac and Linux. Available on Windows through third-parties.</p>
+                <a href="https://www.gnu.org/software/make/" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Courses</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="courses.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Chocolatey <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://chocolatey.org/" target="_blank">Chocolatey Software</a></p>
+                <p class="card-text">A package manager for Windows.</p>
+                <a href="https://chocolatey.org/" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Algorithms</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="algorithms.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">VMware Workstation Player <span class="badge badge-free">Free</span> <span class="badge badge-paid">Paid</h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.vmware.com/" target="_blank">VMware</a></p>
+                <p class="card-text">A virtualization software package for Windows and Linux.</p>
+                <a href="https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Software</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="software.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">VMware Fusion <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.vmware.com/" target="_blank">VMware</a></p>
+                <p class="card-text">A software hypervisor (or virtual machine manager) for Intel-based Macs.</p>
+                <a href="https://www.vmware.com/go/downloadfusion" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">UI resources</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="ui-resources.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Adobe XD <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.adobe.com/" target="_blank">Adobe</a></p>
+                <p class="card-text">A collaborative platform for creating designs for websites, mobile apps and more. Available on Windows and Mac. Requires a <a href="https://www.adobe.com/creativecloud.html">Creative Cloud</a> account.</p>
+                <a href="https://www.adobe.com/products/xd.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Courses</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="courses.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Android Studio <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://developers.google.com/" target="_blank">Google</a></p>
+                <p class="card-text">Build apps for every type of Android device. Available on Windows, Mac, Linux and Chrome OS.</p>
+                <a href="https://developer.android.com/studio" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Algorithms</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="algorithms.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Visual Studio <span class="badge badge-free">Free</span> <span class="badge badge-paid">Paid</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.microsoft.com/" target="_blank">Microsoft</a></p>
+                <p class="card-text">Full-featured IDE to code, debug, test and deploy to any platform. Available on Windows.</p>
+                <a href="https://visualstudio.microsoft.com/vs/" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Software</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="software.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Visual Studio for Mac <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.microsoft.com/" target="_blank">Microsoft</a></p>
+                <p class="card-text">Develop apps for iOS, Android, and web using .NET</p>
+                <a href="https://visualstudio.microsoft.com/vs/mac/" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">UI resources</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="ui-resources.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Eclipse IDE <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.eclipse.org/" target="_blank">Eclipse Foundation</a></p>
+                <p class="card-text">Eclipse IDE includes Java IDE, C/C++ IDE, JavaScript/TypeScript IDE, PHP IDE and more. Available on Windows, Mac and Linux.</p>
+                <a href="https://www.eclipse.org/ide/" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Courses</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="courses.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
-            <div class="card h-100 shadow">
-              <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Algorithms</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="algorithms.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
-            <div class="card h-100 shadow">
-              <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Software</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="software.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
-            <div class="card h-100 shadow">
-              <div class="card-body d-flex flex-column">
-                <h4 class="card-title">UI resources</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="ui-resources.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">XAML Controls Gallery <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.microsoft.com/" target="_blank">Microsoft</a></p>
+                <p class="card-text">This app demonstrates all of the XAML and Windows UI library controls available to make a Fluent Windows 10 app. Available on Windows.</p>
+                <a href="https://www.microsoft.com/en-us/p/xaml-controls-gallery/9msvh128x2zt" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
@@ -225,7 +201,7 @@
       <div class="container d-flex flex-column flex-lg-row text-center justify-content-lg-between py-4 border-top">
         <div>
           <span class="d-block d-lg-inline">CSR</span>
-          <span>&copy; Computer Science Resources 2019</span> &middot;
+          <span>&copy; Computer Student Resources 2019</span> &middot;
           <span><a href="#">Credits</a></span> &middot;
           <span><a href="#">Disclaimer</a></span>
         </div>

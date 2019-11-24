@@ -14,15 +14,26 @@
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/8d40ea811a.js" crossorigin="anonymous"></script>
 
-    <title>Courses & tutorials &middot; Computer Science Resources</title>
+    <title>Tutorials &middot; Computer Student Resources</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark sticky-top">
       <div class="container">
         <a class="navbar-brand font-weight-bold order-0 order-md-0" href="#">CSR</a>
-        <button class="btn order-1 order-md-1" data-toggle="collapse" aria-label="Toggle search bar">
+        <button class="btn order-1 order-md-1" type="button" data-toggle="dropdown" data-display="static" id="searchButton" aria-haspopup="true" aria-expanded="false" aria-label="Toggle search bar">
           <i class="text-light fas fa-search"></i>
         </button>
+
+        <div class="dropdown-menu dropdown-menu-md-right w-100 w-md-auto mr-md-4 mr-lg-5 py-2 px-3 border" aria-labelledby="searchButton">
+          <form class="form-inline">
+            <div class="input-group w-100">
+              <input class="form-control border" type="search" placeholder="Search" aria-label="Search" aria-describedby="searchButton">
+              <div class="input-group-append">
+                <button class="btn btn-outline-primary" type="submit"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
         <button class="navbar-toggler btn border-0 order-2 order-md-0" type="button" data-toggle="collapse" data-target="#navigationLinks" aria-controls="navigationLinks" aria-expanded="false" aria-label="Toggle navigation">
           <i class="text-light fas fa-bars"></i>
         </button>
@@ -30,7 +41,7 @@
         <div class="collapse navbar-collapse order-3 order-md-0 py-2 py-md-0" id="navigationLinks">
           <div class="navbar-nav ml-auto text-center">
             <a class="nav-item nav-link" href="index.html">Home</a>
-            <a class="nav-item nav-link active" href="#">Courses & tutorials <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="#">Tutorials <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="algorithms.html">Algorithms</a>
             <a class="nav-item nav-link" href="software.html">Software</a>
             <a class="nav-item nav-link" href="ui-resources.html">UI resources</a>
@@ -47,8 +58,8 @@
     <header>
       <div class="jumbotron jumbotron-fluid bg-transparent d-flex align-items-center text-light min-vh-50">
         <div class="container">
-          <h1 class="display-4"><strong>Courses & tutorials</strong></h1>
-          <p class="lead mb-5 w-75">Find free and paid courses and tutorials on programming, software and web development, data science &hellip;</p>
+          <h1 class="display-4"><strong>Tutorials</strong></h1>
+          <p class="lead mb-5 w-75">Find free and paid courses and tutorials on programming, software and web development and data science.</p>
         </div>
       </div>
     </header>
@@ -60,160 +71,150 @@
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Courses</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="courses.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Learn HTML <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.w3schools.com/default.asp" target="_blank">W3Schools</a></p>
+                <p class="card-text">Learn HTML, the language used for building web pages.</p>
+                <a href="https://www.w3schools.com/html/default.asp" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Algorithms</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="algorithms.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Learn CSS <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.w3schools.com/default.asp" target="_blank">W3Schools</a></p>
+                <p class="card-text">Learn CSS, the language used for styling web pages.</p>
+                <a href="https://www.w3schools.com/css/default.asp" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Software</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="software.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Learn JavaScript <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.w3schools.com/default.asp" target="_blank">W3Schools</a></p>
+                <p class="card-text">Learn JavaScript, the language used for programming web pages.</p>
+                <a href="https://www.w3schools.com/js/default.asp" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">UI resources</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="ui-resources.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Learn SQL <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.w3schools.com/default.asp" target="_blank">W3Schools</a></p>
+                <p class="card-text">Learn SQL, a language used for accessing databases.</p>
+                <a href="https://www.w3schools.com/sql/default.asp" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Courses</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="courses.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">School of Programming <span class="badge badge-free">Free</span> <span class="badge badge-paid">Paid</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.udacity.com" target="_blank">Udacity</a></p>
+                <p class="card-text">Check here for free and paid courses on Java, C++, Python and Android, iOS, frontend and backend web development.</p>
+                <a href="https://www.udacity.com/school-of-programming" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Algorithms</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="algorithms.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Complete Python Bootcamp <span class="badge badge-paid">Paid</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.udemy.com" target="_blank">Udemy</a></p>
+                <p class="card-text">Learn Python from the basics to creating applications with this paid course.</p>
+                <a href="https://www.udemy.com/course/complete-python-bootcamp/" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Software</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="software.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Complete 2020 Web Development Bootcamp <span class="badge badge-paid">Paid</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.udemy.com" target="_blank">Udemy</a></p>
+                <p class="card-text">Become a full-stack web developer with this course. Includes HTML, CSS,  JavaScript, Node, React, MongoDB and more.</p>
+                <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">UI resources</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="ui-resources.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Think Like a Computer Scientist <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.futurelearn.com" target="_blank">FutureLearn</a></p>
+                <p class="card-text">Discover how to break down problems into smaller parts, design and apply algorithms to data with Python.</p>
+                <a href="https://www.futurelearn.com/courses/programming-102-think-like-a-computer-scientist" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Courses</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="courses.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Linux Tutorial for Beginners <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.youtube.com/user/thenewboston" target="_blank">thenewboston</a></p>
+                <p class="card-text">Get familiar with the Linux (bash) command line from navigating the file system to killing processes.</p>
+                <a href="https://www.youtube.com/playlist?list=PL6gx4Cwl9DGCkg2uj3PxUWhMDuTw3VKjM" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Algorithms</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="algorithms.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">C++ Programming Tutorials <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.youtube.com/user/thenewboston" target="_blank">thenewboston</a></p>
+                <p class="card-text">Get familiar with the Linux (bash) command line from navigating the file system to killing processes.</p>
+                <a href="https://www.youtube.com/playlist?list=PL6gx4Cwl9DGCkg2uj3PxUWhMDuTw3VKjM" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Software</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="software.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">C# Fundamentals for Absolute Beginners <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://channel9.msdn.com/" target="_blank">Channel 9</a></p>
+                <p class="card-text">Learn C# with Bob Tabor. Get the tools, write code, debug, and more.</p>
+                <a href="https://channel9.msdn.com/Series/CSharp-Fundamentals-for-Absolute-Beginners" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">UI resources</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="ui-resources.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Introduction to UWP Development with XAML <span class="badge badge-paid">Free trial</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.pluralsight.com" target="_blank">Pluralsight</a></p>
+                <p class="card-text">Learn how to develop for Windows 10 using C# and XAML, and take advantage of the Windows Store.</p>
+                <a href="https://www.pluralsight.com/courses/windows-10-universal-apps-xaml" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Courses</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="courses.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Pro Git Book <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://git-scm.com" target="_blank">Git</a></p>
+                <p class="card-text">Learn what you need to know about Git, with the book by Scott Chacon and Ben Straub.</p>
+                <a href="https://git-scm.com/book" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Algorithms</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="algorithms.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Learning Online: Reflecting and Sharing <span class="badge badge-free">Free</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.futurelearn.com" target="_blank">FutureLearn</a></p>
+                <p class="card-text">Get the most out of online learning by reflecting and sharing your learning with others.</p>
+                <a href="https://www.futurelearn.com/courses/reflecting-and-sharing" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
             <div class="card h-100 shadow">
               <div class="card-body d-flex flex-column">
-                <h4 class="card-title">Software</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="software.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 my-2 my-md-3">
-            <div class="card h-100 shadow">
-              <div class="card-body d-flex flex-column">
-                <h4 class="card-title">UI resources</h4>
-                <p class="card-subtitle mb-2 font-weight-light">From <a href="#" target="_blank">Source</a></p>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quibusdam magni totam. Omnis, ipsa!</p>
-                <a href="ui-resources.html" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
+                <h4 class="card-title">Software <span class="badge badge-free">Free</span> <span class="badge badge-paid">Paid</span></h4>
+                <p class="card-subtitle mb-2 font-weight-light">From <a href="https://www.udacity.com" target="_blank">Udacity</a></p>
+                <p class="card-text">Build expertise in data manipulation, visualization, predictive analytics, machine learning and data science with free and paid courses from Udacity.</p>
+                <a href="https://www.udacity.com/school-of-data-science" target="_blank" class="btn btn-outline-primary align-self-end mt-auto">Go <i aria-hidden="true" class="fas fa-angle-right"></i></a>
               </div>
             </div>
           </div>
@@ -225,7 +226,7 @@
       <div class="container d-flex flex-column flex-lg-row text-center justify-content-lg-between py-4 border-top">
         <div>
           <span class="d-block d-lg-inline">CSR</span>
-          <span>&copy; Computer Science Resources 2019</span> &middot;
+          <span>&copy; Computer Student Resources 2019</span> &middot;
           <span><a href="#">Credits</a></span> &middot;
           <span><a href="#">Disclaimer</a></span>
         </div>
