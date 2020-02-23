@@ -67,16 +67,16 @@
 
     <main class="bg-white">
       <div class="container py-5 py-md-8 py-lg-10">
-        <form class="p-2 p-md-3">
+        <form class="p-2 p-md-3" id="contactForm">
           <legend class="text-primary">Contact form</legend>
           <div class="row">
             <div class="form-group col-md-6">
               <label for="nameInput">Full name</label>
-              <input type="text" class="form-control" id="nameInput" placeholder="Name Surname">
+              <input type="text" class="form-control" id="nameInput" placeholder="Name Surname" spellcheck="false">
             </div>
             <div class="form-group col-md-6">
               <label for="emailInput">Email</label>
-              <input type="email" class="form-control" id="emailInput" placeholder="username@example.com">
+              <input type="email" class="form-control" id="emailInput" placeholder="username@example.com" spellcheck="false">
             </div>
           </div>
           <div class="form-group row">
@@ -114,5 +114,6 @@
 
     <!-- Custom JS -->
     <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>
