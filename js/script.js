@@ -1,13 +1,20 @@
 $(document).ready(function() {
-  // Hide the 'go down' button when the user scrolls down
+  
   $(window).scroll(function() {
+    // Get the height of the main jumbotron
     var scrollThreshold = $(".jumbotron").outerHeight();
+
+    // Add the 'scrolled' class to the navbar,
+    // when the user scrolls to or past the threshold.
+    // Otherwise remove the class.
     $(".navbar").toggleClass(
       "scrolled",
       $(this).scrollTop() >= scrollThreshold
     );
 
-    if ($(this).scrollTop() >= (2 * scrollThreshold) / 5) {
+    // Hide the 'go down' button,
+    // when the user scrolls to or past 40% of the threshold.
+    if ($(this).scrollTop() >= 0.4 * scrollThreshold) {
       $(".header-angle-down").hide();
     }
   });
