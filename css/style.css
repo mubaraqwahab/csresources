@@ -1,9 +1,10 @@
 :root {
-  --deep-blue: rgb(9, 9, 121);            /* Primary color, gradient heading */
-  --light-sea-green: rgb(35, 116, 140);   /* Link */
-  --rosy-brown: rgb(152, 99, 130);        /* Secondary color, gradient, shadow, border, active link */
-  --dark-slate-gray: #2A2A36;
-  --dark-slate-blue: rgb(80, 89, 128);    /* Gradient */
+  --deep-blue: rgb(9, 9, 121); /* Primary color, gradient heading */
+  --light-sea-green: rgb(35, 116, 140); /* Link */
+  /* Secondary color, gradient, shadow, border, active link */
+  --rosy-brown: rgb(152, 99, 130);
+  --dark-slate-gray: #2a2a36;
+  --dark-slate-blue: rgb(80, 89, 128); /* Gradient */
 }
 
 /* BOOTSTRAP OVERRIDES */
@@ -19,27 +20,33 @@ a:hover {
   text-decoration: underline;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 2rem;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 1.75rem;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 1.5rem;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 1.25rem;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 1rem;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 0.75rem;
 }
 
@@ -47,7 +54,8 @@ h6, .h6 {
   margin-bottom: 0;
 }
 
-.card-title, .text-primary {
+.card-title,
+.text-primary {
   color: var(--deep-blue) !important;
 }
 
@@ -61,7 +69,9 @@ h6, .h6 {
   background-color: var(--rosy-brown) !important;
 }
 
-.btn:focus, .btn.focus, .form-control:focus {
+.btn:focus,
+.btn.focus,
+.form-control:focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(152, 99, 130, 0.5);
 }
@@ -78,23 +88,27 @@ h6, .h6 {
   border-color: var(--deep-blue);
 }
 
-.btn-outline-primary:focus, .btn-outline-primary.focus {
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
   box-shadow: 0 0 0 0.2rem rgba(9, 9, 121, 0.5);
 }
 
-.btn-outline-primary.disabled, .btn-outline-primary:disabled {
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
   color: var(--deep-blue);
   background-color: transparent;
 }
 
-.btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-primary.dropdown-toggle {
   color: #fff;
   background-color: var(--deep-blue);
   border-color: var(--deep-blue);
 }
 
-.btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(9, 9, 121, 0.5);
 }
@@ -118,19 +132,39 @@ html {
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-	html {
-		scroll-behavior: auto;
-	}
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
   /* Fallback */
   background-color: var(--deep-blue);
 
-  background: -moz-linear-gradient(170deg, var(--deep-blue) 0%, var(--rosy-brown) 50%, var(--dark-slate-blue) 100%);
-  background: -webkit-linear-gradient(170deg, var(--deep-blue) 0%, var(--rosy-brown) 50%, var(--dark-slate-blue) 100%);
-  background: -o-linear-gradient(170deg, var(--deep-blue) 0%, var(--rosy-brown) 50%, var(--dark-slate-blue) 100%);
-  background: linear-gradient(170deg, var(--deep-blue) 0%, var(--rosy-brown) 50%, var(--dark-slate-blue) 100%);
+  background: -moz-linear-gradient(
+    170deg,
+    var(--deep-blue) 0%,
+    var(--rosy-brown) 50%,
+    var(--dark-slate-blue) 100%
+  );
+  background: -webkit-linear-gradient(
+    170deg,
+    var(--deep-blue) 0%,
+    var(--rosy-brown) 50%,
+    var(--dark-slate-blue) 100%
+  );
+  background: -o-linear-gradient(
+    170deg,
+    var(--deep-blue) 0%,
+    var(--rosy-brown) 50%,
+    var(--dark-slate-blue) 100%
+  );
+  background: linear-gradient(
+    170deg,
+    var(--deep-blue) 0%,
+    var(--rosy-brown) 50%,
+    var(--dark-slate-blue) 100%
+  );
 
   /* Photo by mohammad alizade on Unsplash */
   /* background-image: url(../images/blurry-rainy-day.jpg); */
@@ -141,7 +175,8 @@ body {
   background-size: cover; */
 }
 
-.navbar, .navbar .dropdown-menu {
+.navbar,
+.navbar .dropdown-menu {
   background: rgba(9, 9, 121, 0);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -150,7 +185,8 @@ body {
 
 /* Change navbar colour on scroll */
 
-.navbar.scrolled, .navbar.scrolled .dropdown-menu {
+.navbar.scrolled,
+.navbar.scrolled .dropdown-menu {
   background: var(--deep-blue) !important;
   box-shadow: 0 0.25rem 0.5rem rgba(152, 99, 130, 0.2);
 }

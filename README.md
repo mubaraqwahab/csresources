@@ -1,5 +1,5 @@
 # csresources
-A resource library for computer science students.
+A simple frontend-only website demonstrating Bootstrap 4.
 
 > **Note:** This project is just a demo, so the contact form doesn't work.
 
