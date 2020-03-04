@@ -13,3 +13,6 @@ A simple frontend-only website demonstrating Bootstrap 4.
 
 ## Demo
 See the project live at https://mubaraqwahab.github.io/csresources
+
+## License
+[MIT License](https://github.com/mubaraqwahab/csresources/blob/master/LICENSE).
