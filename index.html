@@ -6,32 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Font awesome -->
-    <script src="https://kit.fontawesome.com/8d40ea811a.js" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/8d40ea811a.js" crossorigin="anonymous"></script>
 
     <title>Home &middot; Computer Student Resources</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark sticky-top dropdown">
       <div class="container">
-        <a class="navbar-brand font-weight-bold order-0 order-md-0" href="/">
+        <!-- Logo -->
+        <a class="navbar-brand font-weight-bold order-0 order-md-0" href="index.html">
           <img src="images/CSR-logo-white.png" height="30" alt="CSR logo">
         </a>
+
+        <!-- Search box toggle button -->
         <button class="btn order-1 order-md-1" type="button" data-toggle="dropdown" data-display="static" id="searchButton" aria-haspopup="true" aria-expanded="false" aria-label="Toggle search bar">
           <i class="text-light fas fa-search"></i>
         </button>
 
+        <!-- Search box -->
         <div class="dropdown-menu dropdown-menu-md-right w-100 w-md-auto mr-md-4 mr-lg-5 py-2 px-3 border" aria-labelledby="searchButton">
           <form class="form-inline">
             <div class="input-group w-100">
@@ -43,10 +44,12 @@
           </form>
         </div>
 
+        <!-- Nav toggle button -->
         <button class="navbar-toggler btn border-0 order-2 order-md-0" type="button" data-toggle="collapse" data-target="#navigationLinks" aria-controls="navigationLinks" aria-expanded="false" aria-label="Toggle navigation">
           <i class="text-light fas fa-bars"></i>
         </button>
 
+        <!-- Nav links -->
         <div class="collapse navbar-collapse order-3 order-md-0" id="navigationLinks">
           <div class="navbar-nav ml-auto text-center">
             <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
@@ -54,7 +57,6 @@
             <a class="nav-item nav-link" href="algorithms.html">Algorithms</a>
             <a class="nav-item nav-link" href="software.html">Software</a>
             <a class="nav-item nav-link" href="ui-resources.html">UI resources</a>
-            <!-- <a class="nav-item nav-link" href="contact-us.html">Contact us</a> -->
           </div>
         </div>
       </div>
@@ -67,8 +69,8 @@
           <p class="lead mx-auto mb-5 w-75">Are you looking for resources for your next computer science project? <em>We've got you covered!</em> We can link you to courses, software, UI resources and more.</p>
         </div>
       </div>
-      <a href="#main" class="text-light position-absolute header-angle-down p-2 animated infinite bounce">
-        <i aria-hidden="true" class="fas fa-angle-down fa-2x"></i>
+      <a href="#main" class="text-light position-absolute header-angle-down p-2">
+        <i aria-hidden="true" aria-label="Go down to main content" class="fas fa-angle-down fa-2x"></i>
       </a>
     </header>
 
@@ -119,7 +121,7 @@
       <div class="container d-flex flex-column flex-lg-row text-center justify-content-lg-between py-4 border-top">
         <div>
           <span class="d-block d-lg-inline">
-            <img src="images/favicon.png" height="24" width="24" alt="CSR logo">
+            <img src="favicon.png" height="24" width="24" alt="CSR logo">
           </span>
           <span class="d-block d-lg-inline">Computer Student Resources <time datetime="" id="footerYear"></time></span>
           <span class="d-none d-lg-inline">&middot;</span>
@@ -130,7 +132,7 @@
         <div>Have some resource you would like to share? <a href="contact-us.html">Contact us!</a></div>
       </div>
     </footer>
-    <!-- Optional JavaScript -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
